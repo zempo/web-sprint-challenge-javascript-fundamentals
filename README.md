@@ -6,14 +6,13 @@ This challenge allows you to practice the concepts and techniques learned over t
 
 This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
 
-You are not allowed to collaborate during the sprint challenge. However, you are encouraged to follow the twenty-minute rule and seek support from your TL if you need direction. 
+You are not allowed to collaborate during the sprint challenge. However, you are encouraged to follow the twenty-minute rule and seek support from your TL if you need direction.
 
 _You have **three hours** to complete this challenge. Plan your time accordingly._
 
-
 ## Introduction
 
-You will notice there are several JavaScript files being brought into the index.html file.  Each of those files contain JavaScript problems you need to solve.  If you get stuck on something, skip over it and come back to it later.
+You will notice there are several JavaScript files being brought into the index.html file. Each of those files contain JavaScript problems you need to solve. If you get stuck on something, skip over it and come back to it later.
 
 In meeting the minimum viable product (MVP) specifications listed below, you should have a console full of correct responses to the problems given.
 
@@ -27,15 +26,33 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+**The 'forEach' and 'map' array methods both do not explicitly mutate the arrays on which they are called.**
+**However, 'forEach' will return undefined and can modify elements of the original array if the callback is altered.**
+**The 'map' method will return a completely new array of modified/unmodified elements.**
+
 2. Explain the difference between a callback and a higher order function.
+
+**In order to avoid less-readable spaghetti code, developers try to separate logic between helper/callback and higher order functions.**
+**A higher order function returns the results of multiple steps of calculations/modifications, while a callback is designed to only tackle one major step of a problem.**
+**Using this relationship, higher order functions can call and use the results of outside callbacks - the best practice in functional programming.**
 
 3. What is closure?
 
+**Closure describes how a function can access variables outside of its scope.**
+**That is, if a function is nested, it can grab variables from parent functions encasing it and the global scope.**
+
 4. Describe the four rules of the 'this' keyword.
+
+i. **this broadly refers to the global scope**
+ii. **this also refers to the values inside of an object when an object key follows it (this.name, for example)**
+iii. **this can also be explicitly defined as a particular object method when called using 'call' or 'apply'. With 'bind' the this value is defined (not called) and can be accessed later in the document.**
+iv. **this, in instances of a constructor object, refers to object values in the specific instance (this.name would be 'larry' in a new Person(larry), for example)**
 
 5. Why do we need super() in an extended class?
 
-You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
+**In order to access the methods and properties of a parental class, we need to call super(). It is a syntax abstraction/sugar for prototypal inheritance between classes.**
+
+You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
 ## Instructions
 
@@ -57,26 +74,30 @@ Your finished project must include all of the following requirements:
 #### Task A: Objects and Arrays
 
 Test your knowledge of advanced array methods and callbacks.
-* [ ] Use the [arrays-callbacks.js](challenges/arrays-callbacks.js) link to get started.  Read the instructions carefully!
+
+- [ ] Use the [arrays-callbacks.js](challenges/arrays-callbacks.js) link to get started. Read the instructions carefully!
 
 #### Task B: Closure
 
-This challenge takes a look at closures as well as scope. 
-* [ ] Use the [closure.js](challenges/closure.js) link to get started. Read the instructions carefully!
+This challenge takes a look at closures as well as scope.
+
+- [ ] Use the [closure.js](challenges/closure.js) link to get started. Read the instructions carefully!
 
 #### Task C: Prototypes
 
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
-* [ ] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
+
+- [ ] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
 
 #### Task D: Classes
 
 Once you have completed the prototypes challenge, it's time to convert all your hard work into classes.
-* [ ] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
+
+- [ ] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
 
 In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
-### Task 3: Stretch Goals 
+### Task 3: Stretch Goals
 
 There are a few stretch problems found throughout the files, don't work on them until you are finished with MVP requirements!
 
@@ -84,8 +105,6 @@ There are a few stretch problems found throughout the files, don't work on them 
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
 - [ ] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete after receiving your pull-request
-
-
