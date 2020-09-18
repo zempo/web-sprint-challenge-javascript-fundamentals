@@ -46,7 +46,7 @@ class CubeMaker extends CuboidMaker {
   }
 }
 
-// height, length, and width will default to side arguement
+// height, length, and width will each default to a single side arguement
 const cube = new CubeMaker({ side: 4 });
 
 console.log(cube);

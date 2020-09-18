@@ -26,13 +26,31 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+**The 'forEach' and 'map' array methods both do not explicitly mutate the arrays on which they are called.**
+**However, 'forEach' will return undefined and can modify elements of the original array if the callback is altered.**
+**The 'map' method will return a completely new array of modified/unmodified elements.**
+
 2. Explain the difference between a callback and a higher order function.
+
+**In order to avoid less-readable spaghetti code, developers try to separate logic between helper/callback and higher order functions.**
+**A higher order function returns the results of multiple steps of calculations/modifications, while a callback is designed to only tackle one major step of a problem.**
+**Using this relationship, higher order functions can call and use the results of outside callbacks - the best practice in functional programming.**
 
 3. What is closure?
 
+**Closure describes how a function can access variables outside of its scope.**
+**That is, if a function is nested, it can grab variables from parent functions encasing it and the global scope.**
+
 4. Describe the four rules of the 'this' keyword.
 
+i. **this broadly refers to the global scope**
+ii. **this also refers to the values inside of an object when an object key follows it (this.name, for example)**
+iii. **this can also be explicitly defined as a particular object method when called using 'call' or 'apply'. With 'bind' the this value is defined (not called) and can be accessed later in the document.**
+iv. **this, in instances of a constructor object, refers to object values in the specific instance (this.name would be 'larry' in a new Person(larry), for example)**
+
 5. Why do we need super() in an extended class?
+
+**In order to access the methods and properties of a parental class, we need to call super(). It is a syntax abstraction/sugar for prototypal inheritance between classes.**
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
